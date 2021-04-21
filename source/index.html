@@ -120,7 +120,7 @@
           </span>
         </a>
       </div>
-      <!-- список с соцсетями -->
+
       <ul class="header__social social">
         <li class="social__item">
           <a class="social__link" href="#">
@@ -164,17 +164,17 @@
 
   <main class="page-main">
 
-    <section class="welcome">
-      <div class="welcome__container container">
-        <header class="welcome__header">
-          <h1 class="welcome__slogan main-header">В путешествие
+    <section class="promo">
+      <div class="promo__container container">
+        <header class="promo__header">
+          <h1 class="promo__slogan main-header">В путешествие
             с крутыми
             попутчиками!</h1>
         </header>
 
-        <ul class="welcome__user-actions user-actions">
+        <ul class="promo__user-actions user-actions user-actions--medium-size">
           <li class="user-actions__item">
-            <a class="user-actions__link icon-form icon-form--fifth-color" href="tel:+78005558628">
+            <a class="user-actions__link" href="tel:+78005558628">
               <span class="visually-hidden">
                 Позвонить нам по телефону
               </span>
@@ -190,7 +190,7 @@
             </a>
           </li>
           <li class="user-actions__item">
-            <a class="user-actions__link icon-form icon-form--fourth-color" href="mailto:mail@htmlacademy.ru">
+            <a class="user-actions__link user-actions__link--fourth-color" href="mailto:mail@htmlacademy.ru">
               <span class="visually-hidden">
                 Написать нам на электронную почту
               </span>
@@ -202,67 +202,69 @@
               </svg>
             </a>
           </li>
-          <li class="user-actions__item">
-            <a class="user-actions__link button button--round button--main-color" href="#">
+          <li class="user-actions__item user-actions__item--authorize">
+            <a class="user-actions__button button button--round button--main-color" href="#">
               Авторизация
             </a>
           </li>
         </ul>
 
-        <blockquote class="welcome__review">
-          <p class="welcome__text text text--light">
+        <blockquote class="promo__review">
+          <p class="promo__text">
             «Лучшее приложение, что я видел в жизни!»
           </p>
-          <cite class="welcome__author text text--bold">
+          <cite class="promo__author">
             Мурат Эльтазин главный редактор газеты «гаджетлайф»
           </cite>
         </blockquote>
 
-        <ul class="welcome__tread tread">
-          <li class="tread__item">
-            <a class="tread__link text text--bold text--eight-color" href="#">
+        <ol class="promo__tread">
+          <li class="promo__item">
+            <a class="promo__link" href="#">
               Выберите направление
             </a>
           </li>
-          <li class="tread__item">
-            <a class="tread__link text text--bold text--eight-color" href="#">
+          <li class="promo__item">
+            <a class="promo__link" href="#">
               Изучите идеи путешественников
             </a>
           </li>
-          <li class="tread__item">
-            <a class="tread__link text text--bold text--eight-color" href="#">
+          <li class="promo__item">
+            <a class="promo__link" href="#">
               Находите тех, кто похож на вас
             </a>
           </li>
-          <li class="tread__item">
-            <a class="tread__link text text--bold text--eight-color" href="#">
+          <li class="promo__item">
+            <a class="promo__link" href="#">
               Путешествуйте вместе!
             </a>
           </li>
-        </ul>
+        </ol>
 
       </div>
     </section>
 
     <section class="about">
-      <h2 class="about__title section-title">
-        О сервисе
-      </h2>
-      <p class="about__text text text--light">
-        Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий
-        и черпайте вдохновение в чужих.
-      </p>
-      <p class="about__text text text--bold">
-        А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
-      </p>
-      <a class="about__button button button-rect button-rect--main-color" href="#">
-        <span>
-          Подробнее
-        </span>
-        <svg width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10.2937 7L0.160839 13.0622V0.937822L10.2937 7Z" fill="#1D2E5B" />
-        </svg>
-      </a>
+      <div class="about__container container">
+        <h2 class="about__title section-title">
+          О сервисе
+        </h2>
+        <p class="about__text">
+          Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий
+          и черпайте вдохновение в чужих.
+        </p>
+        <p class="about__text about__text--bold">
+          А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
+        </p>
+        <a class="about__button button button--round-secondary button--main-color button--icon" href="#">
+          <span>
+            Подробнее
+          </span>
+          <svg width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.2937 7L0.160839 13.0622V0.937822L10.2937 7Z" fill="#1D2E5B" />
+          </svg>
+        </a>
+      </div>
     </section>
 
     <section class="direction">

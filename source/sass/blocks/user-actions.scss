@@ -32,4 +32,16 @@
   font-size: 17px;
   line-height: 30px;
   color: $second-color;
+  text-transform: uppercase;
+}
+
+.user-actions--medium-size {
+  .user-actions__link {
+    width: 40px;
+    height: 40px;
+  }
+
+  .user-actions__button {
+    height: 40px;
+  }
 }

@@ -1,0 +1,28 @@
+.about {
+  padding: 33px 0 82px;
+  background-color: $thirteenth-color;
+
+  &__title {
+    margin-bottom: 19px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+  }
+
+  &__text:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &__text--bold {
+    font-weight: 700;
+  }
+
+  &__button {
+    display: none;
+  }
+}
