@@ -1,1 +1,30 @@
-// Начните писать стили здесь
+@import "colors.scss";
+@import "fonts.scss";
+@import "reset.scss";
+@import "blocks/global.scss";
+@import "blocks/header.scss";
+@import "blocks/user-actions.scss";
+
+body {
+  font-family: "Blogger Sans", "Arial", "Helvetica", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1322px;
+  height: 100%;
+  padding: 0 25px;
+  margin: 0 auto;
+}
