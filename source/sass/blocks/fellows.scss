@@ -1,0 +1,49 @@
+.fellows {
+  position: relative;
+  z-index: -2;
+  padding: 105px 0 31px;
+  background-color: $thirteenth-color;
+}
+
+.fellows__title {
+  margin-bottom: 19px;
+}
+
+.fellows__text {
+  margin-bottom: 25px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+
+  &--bold {
+    font-weight: 700;
+  }
+}
+
+.fellows__list {
+  margin-top: 54px;
+}
+
+.fellow__info {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.fellow__countries-list {
+  display: flex;
+}
+
+.fellow__countries-item {
+  margin-right: 20px;
+}
+
+.fellow__countries-item:last-child {
+  margin-right: 0;
+}
+
+.fellow__countries-item img {
+  width: 35px;
+  height: 25px;
+}

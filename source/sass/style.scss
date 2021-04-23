@@ -1,3 +1,4 @@
+@import "vars.scss";
 @import "colors.scss";
 @import "fonts.scss";
 @import "reset.scss";
@@ -6,6 +7,9 @@
 @import "blocks/promo.scss";
 @import "blocks/about.scss";
 @import "blocks/user-actions.scss";
+@import "blocks/direction.scss";
+@import "blocks/country.scss";
+@import "blocks/fellows.scss";
 
 body {
   font-family: "Blogger Sans", "Arial", "Helvetica", sans-serif;

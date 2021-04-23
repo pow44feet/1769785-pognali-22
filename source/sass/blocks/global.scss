@@ -8,9 +8,8 @@
   border: none;
   background-color: transparent;
 
-  &--icon {
-    font-size: 18px;
-    line-height: 100%;
+  &--icon span {
+    margin-right: auto;
   }
 
   &--round {
@@ -28,6 +27,15 @@
     color: $sixth-color;
     background-color: $main-color;
   }
+}
+
+.section-shift {
+  margin-bottom: -25px;
+}
+
+.section-bottom-rounded {
+  border-bottom-left-radius: $medium-radius;
+  border-bottom-right-radius: $medium-radius;
 }
 
 .contacts__link {
