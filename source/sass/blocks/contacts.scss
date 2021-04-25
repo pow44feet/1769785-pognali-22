@@ -1,0 +1,26 @@
+.contacts__link {
+  display: flex;
+}
+
+.contacts__icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  margin-right: 16px;
+  background-color: $eight-color;
+  border: none;
+  border-radius: 50%;
+}
+
+.contacts__text {
+  display: inline-flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: $eight-color;
+  text-transform: uppercase;
+}

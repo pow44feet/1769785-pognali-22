@@ -1,0 +1,28 @@
+.button {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  color: $white-color;
+  border: none;
+  background-color: transparent;
+
+  &--icon span {
+    margin-right: auto;
+  }
+
+  &--round {
+    border-radius: 25px;
+  }
+
+  &--round-secondary {
+    padding: 10px 23px;
+    min-height: 62px;
+    font-weight: 700;
+    border-radius: 10px;
+  }
+
+  &--main-color {
+    color: $sixth-color;
+    background-color: $main-color;
+  }
+}

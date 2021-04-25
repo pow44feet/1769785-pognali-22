@@ -2,14 +2,18 @@
   padding: 18px 0;
   background: $second-color;
 
-  &__logo--dark {display: none;}
+  &__logo--dark {
+    display: none;
+  }
 }
 
 .header__burger {
   position: relative;
   width: 30px;
   height: 24px;
+  padding: 0;
   background-color: transparent;
+  border: 0;
 
   &::before,
   &::after {
@@ -88,8 +92,12 @@
     transform: translate(-50%, -50%) rotate(45deg);
   }
 
-  & .header__contacts {display: block;}
+  & .header__contacts {
+    display: block;
+  }
 
-  & .header__social {display: flex;}
+  & .header__social {
+    display: flex;
+  }
 }
 

@@ -9,7 +9,7 @@
 .country__info {
   position: relative;
   display: grid;
-  grid-template: repeat(3, auto) / 1fr auto;
+  grid-template-columns: 1fr auto;
   padding: 0 24px 24px;
   margin-top: -10px;
   background-color: #ffffff;
@@ -30,6 +30,7 @@
 .country__name {
   grid-row: 2 / 3;
   grid-column: 1 / 2;
+  margin: 0;
   margin-bottom: 2px;
   font-weight: 700;
   font-size: 21px;
@@ -40,6 +41,7 @@
 .country__slogan {
   grid-row: 3 / 4;
   grid-column: 1 / 2;
+  margin: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -57,11 +59,10 @@
   color: rgba($second-color, 0.3);
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
-    top: 50%;
+    top: 3px;
     left: 0;
-    transform: translateY(-50%);
     width: 14px;
     height: 14px;
     background-image: url("../img/icons/icon-user.svg");

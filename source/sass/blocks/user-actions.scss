@@ -1,13 +1,15 @@
 .user-actions {
   display: flex;
+
+  @include list-reset;
 }
 
 .user-actions__item {
-   flex: 0 1 auto;
+  flex: 0 1 auto;
 
-   &--authorize {
-     flex: 1 1 auto;
-   }
+  &--authorize {
+    flex: 1 1 auto;
+  }
 }
 
 .user-actions__link {
@@ -18,6 +20,7 @@
   height: 50px;
   background-color: $fifth-color;
   border-radius: 50%;
+
   &--fourth-color {
     background-color: $fourth-color;
   }

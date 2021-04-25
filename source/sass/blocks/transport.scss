@@ -1,0 +1,64 @@
+.transport {
+  display: flex;
+}
+
+.transport__item {
+  margin-right: 14px;
+  width: 25px;
+  height: 25px;
+}
+
+.transport__item span {
+  display: none;
+}
+
+.transport__item:last-child {
+  margin-right: 0;
+}
+
+.transport__plane,
+.transport__auto,
+.transport__bicycle,
+.transport__foot {
+  position: relative;
+}
+
+.transport__plane::before,
+.transport__auto::before,
+.transport__bicycle::before,
+.transport__foot::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+}
+
+.transport__plane::before {
+  width: 21px;
+  height: 23px;
+  background-image: url("../img/icons/transport-plane.svg");
+}
+
+.transport__auto::before {
+  width: 18px;
+  height: 21px;
+  background-image: url("../img/icons/transport-auto.svg");
+}
+
+.transport__bicycle::before {
+  width: 25px;
+  height: 24px;
+  background-image: url("../img/icons/transport-bicycle.svg");
+}
+
+.transport__foot::before {
+  width: 21px;
+  height: 24px;
+  background-image: url("../img/icons/transport-foot.svg");
+}
+
+.transport--disable {
+  opacity: 0.15;
+}

@@ -1,6 +1,4 @@
 .direction {
-  position: relative;
-  z-index: -1;
   padding: 105px 0 34px;
   background-color: $tenth-color;
 }
@@ -18,8 +16,7 @@
 }
 
 .direction__list {
-  display: flex;
-  flex-direction: column;
+  @include list-reset;
   margin-bottom: 27px;
 }
 

@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <title>HTML Academy: Погнали</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -25,7 +26,7 @@
         </picture>
       </a>
 
-      <button class="header__burger burger">
+      <button class="header__burger">
         <span class="visually-hidden">
           Открыть меню
         </span>
@@ -136,7 +137,7 @@
 
   <main class="page-main">
 
-    <section class="promo">
+    <section class="page-main__promo promo">
       <div class="promo__container container">
         <header class="promo__header">
           <h1 class="promo__slogan main-header">В путешествие
@@ -207,7 +208,7 @@
       </div>
     </section>
 
-    <section class="about section-shift section-bottom-rounded">
+    <section class="page-main__about about section-shift section-bottom-rounded">
       <div class="about__container container">
         <h2 class="about__title section-title">
           О сервисе
@@ -230,7 +231,7 @@
       </div>
     </section>
 
-    <section class="direction section-shift section-bottom-rounded">
+    <section class="page-main__direction direction section-shift section-bottom-rounded">
       <div class="direction__container container">
         <h2 class="direction__title section-title">
           Направления
@@ -330,7 +331,7 @@
       </div>
     </section>
 
-    <section class="fellows section-bottom-rounded">
+    <section class="page-main__fellows fellows section-shift section-bottom-rounded">
       <div class="fellows__container container">
         <h2 class="fellows__title section-title">
           Попутчики
@@ -406,44 +407,32 @@
                 </li>
               </ul>
 
-              <h3 class="fellows__name">
+              <h3 class="fellows__name fellows__name--offline">
                 <a class="fellows__link" href="#">
                   Таня Фирсова
                 </a>
               </h3>
               <ul class="fellows__tags hashtags">
-                <li>
-                  <a class="hashtags__link" href="#">
-                    ЗОЖ
-                  </a>
+                <li class="hashtags__item">
+                  ЗОЖ
                 </li>
-                <li>
-                  <a class="hashtags__link" href="#">
-                    ПП
-                  </a>
+                <li class="hashtags__item">
+                  ПП
                 </li>
-                <li>
-                  <a class="hashtags__link" href="#">
-                    Фитнес
-                  </a>
+                <li class="hashtags__item">
+                  Фитнес
                 </li>
-                <li>
-                  <a class="hashtags__link" href="#">
-                    пляж
-                  </a>
+                <li class="hashtags__item">
+                  пляж
                 </li>
-                <li>
-                  <a class="hashtags__link" href="#">
-                    авокадо
-                  </a>
+                <li class="hashtags__item">
+                  авокадо
                 </li>
-                <li>
-                  <a class="hashtags__link" href="#">
-                    смузи
-                  </a>
+                <li class="hashtags__item">
+                  смузи
                 </li>
               </ul>
-              <ul class="fellows-info__transport transport">
+              <ul class="fellows__transport transport">
                 <li class="transport__item transport__plane transport--active">
                   <span>
                     Авиаперелет
@@ -469,10 +458,26 @@
           </li>
           <!--Petya Demin-->
           <li class="fellows__item">
-            <div class="fellow__image">
-              <picture>
-                <source srcset="img/users/petya_demin.webp" type="image/webp">
-                <img src="img/users/petya_demin.jpg" alt="аватар пользователя сайта погнали.ru">
+            <div class="fellows__image">
+              <picture><!--
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="img/users/petya-demin/petya-demin--tablet.webp 1x,
+                          img/users/petya-demin/petya-demin--tablet@2x.webp 2x">
+                <source
+                  type="image/webp"
+                  srcset="img/users/petya-demin/petya-demin.webp 1x,
+                          img/users/petya-demin/petya-demin@2x.webp 2x">-->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/users/petya-demin/petya-demin--tablet@2x.jpg 1x,
+                          img/users/petya-demin/petya-demin--tablet@2x.jpg 2x">
+                <img
+                  src="img/users/petya-demin/petya-demin.jpg"
+                  srcset="img/users/petya-demin/petya-demin@2x.jpg 2x"
+                  alt="аватар пользователя сайта погнали.ru">
               </picture>
             </div>
             <div class="fellows__level level level--full-size">
@@ -498,11 +503,11 @@
             <div class="fellows__info">
               <ul class="fellows__countries-list">
                 <li class="fellows__countries-item">
-                  <img src="img/countries/belgium.jpg"
+                  <img src="img/flags/belgium.png"
                     alt="Найдем попутчиков для поездки в Бельгию на сайте погнали.ru">
                 </li>
                 <li class="fellows__countries-item">
-                  <img src="img/countries/czech.jpg" alt="Найдем попутчиков для поездки в Чехию на сайте погнали.ru">
+                  <img src="img/flags/czech.png" alt="Найдем попутчиков для поездки в Чехию на сайте погнали.ru">
                 </li>
               </ul>
               <h3 class="fellows__name fellows__name--online">
@@ -511,33 +516,23 @@
                 </a>
               </h3>
               <ul class="fellows__tags hashtags">
-                <li>
-                  <a class="hashtags__link" href="#">
-                    бургер
-                  </a>
+                <li class="hashtags__item">
+                  бургер
                 </li>
-                <li>
-                  <a class="hashtags__link" href="#">
-                    бар
-                  </a>
+                <li class="hashtags__item">
+                  бар
                 </li>
-                <li>
-                  <a class="hashtags__link" href="#">
-                    футбол
-                  </a>
+                <li class="hashtags__item">
+                  футбол
                 </li>
-                <li>
-                  <a class="hashtags__link" href="#">
-                    концерт
-                  </a>
+                <li class="hashtags__item">
+                  концерт
                 </li>
-                <li>
-                  <a class="hashtags__link" href="#">
-                    крафт
-                  </a>
+                <li class="hashtags__item">
+                  крафт
                 </li>
               </ul>
-              <ul class="fellows-info__transport transport">
+              <ul class="fellows__transport transport">
                 <li class="transport__item transport__plane transport--active">
                   <span>
                     Авиаперелет
@@ -563,44 +558,49 @@
           </li>
         </ul>
 
-        <a class="direction__button-bottom button-square button-square--main-color" href="form.html">
-          Показать всех
+        <a class="fellows__button-bottom button button--round-secondary button--icon button--main-color" href="form.html">
+          <span>
+            Показать все
+          </span>
+          <svg width="11" height="14">
+            <use xlink:href="img/sprite.svg#figure-triangle"></use>
+          </svg>
         </a>
       </div>
     </section>
 
-    <section class="rates">
+    <section class="page-main__rates rates section-shift section-bottom-rounded">
       <div class="rates__container container">
         <h2 class="rates__title section-title">
-          Добавьте свой профиль
+          Добавьте<br>свой<br>профиль
         </h2>
 
-        <div class="rates__table rates-table">
-          <li class="rates-table__row">
-            <p class="rates-table__text text text--light text--third-color">
+        <ul class="rates__table">
+          <li class="rates__row">
+            <p class="rates__text">
               Базовое размещение
             </p>
-            <p class="rates-table__text text text--light text--third-color">
+            <p class="rates__text">
               Бесплатно
             </p>
           </li>
-          <li class="rates-table__row">
-            <p class="rates-table__text text text--light text--third-color">
+          <li class="rates__row">
+            <p class="rates__text">
               Вывод на первых позициях
             </p>
-            <p class="rates-table__text text text--light text--third-color">
+            <p class="rates__text">
               99 руб./мес
             </p>
           </li>
-          <li class="rates-table__row">
-            <p class="rates-table__text text text--light text--third-color">
+          <li class="rates__row">
+            <p class="rates__text">
               Кастомный цвет карточки
             </p>
-            <p class="rates-table__text text text--light text--third-color">
+            <p class="rates__text">
               59 руб./мес
             </p>
           </li>
-        </div>
+        </ul>
 
         <a class="rates__link" href="#" data-popup="rates">
           Показать тарифы для бизнеса
@@ -608,7 +608,7 @@
       </div>
     </section>
 
-    <section class="act">
+    <section class="page-main__act act">
       <div class="act__container container">
         <h2 class="act__title section-title">Заинтересовались?</h2>
         <p class="act__text-appeal text text--light">
@@ -669,9 +669,12 @@
       </div>
     </section>
 
-    <section class="address">
+    <section class="page-main__address address">
       <div class="address__container container">
         <div class="address__location">
+          <h2 class="address__title visually-hidden">
+            Наш адрес
+          </h2>
           <span class="address__icon-form icon-form icon-form--eight-color">
             <svg class="address__icon" width="21" height="21" viewBox="0 0 21 21" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -693,10 +696,10 @@
       </div>
     </section>
 
-    <div class="map">
+    <div class="page-main__map map">
       <iframe class="map__iframe"
         src="https://yandex.ru/map-widget/v1/?um=constructor%3Abc94d4391dd8162186ef415d009afa0e66f83a273b5359fbf53fbad4f2265df0&amp;source=constructor"
-        width="1280" height="600"></iframe>
+        width="100%" height="600"></iframe>
     </div>
 
   </main>
