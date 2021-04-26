@@ -55,19 +55,18 @@
 }
 
 .fellows__countries-list {
+  @include list-reset;
   position: relative;
   top: -14px;
   display: flex;
-
-  @include list-reset;
 }
 
 .fellows__countries-item {
   margin-right: 20px;
-}
 
-.fellows__countries-item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .fellows__countries-item img {

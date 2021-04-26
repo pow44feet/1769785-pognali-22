@@ -1,8 +1,10 @@
 .header {
   padding: 18px 0;
   background: $second-color;
+}
 
-  &__logo--dark {
+.header__logo {
+  &--dark {
     display: none;
   }
 }
@@ -100,4 +102,3 @@
     display: flex;
   }
 }
-

@@ -1,9 +1,8 @@
 .hashtags {
+  @include list-reset;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-  @include list-reset;
 }
 
 .hashtags li {

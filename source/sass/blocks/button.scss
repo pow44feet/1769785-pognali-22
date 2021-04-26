@@ -10,6 +10,10 @@
     margin-right: auto;
   }
 
+  &--icon svg {
+    fill: $sixth-color;
+  }
+
   &--round {
     border-radius: 25px;
   }
@@ -19,6 +23,28 @@
     min-height: 62px;
     font-weight: 700;
     border-radius: 10px;
+  }
+
+  &--border {
+    color: $sixth-color;
+    border: 3px solid $thirteenth-color;
+
+    &:hover {
+      color: $white-color;
+      background-color: $thirteenth-color;
+    }
+
+    &:hover svg {
+      fill: $white-color;
+    }
+
+    &:active {
+      color: rgba($white-color, 0.3);
+    }
+
+    &:active svg {
+      fill: rgba($white-color, 0.3);
+    }
   }
 
   &--main-color {

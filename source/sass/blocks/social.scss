@@ -10,7 +10,11 @@
   align-items: center;
   width: 45px;
   height: 45px;
-  background: transparent;
+  background-color: transparent;
   border: none;
   border-radius: 50%;
+
+  &--main-color {
+    background-color: $main-color;
+  }
 }

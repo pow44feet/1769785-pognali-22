@@ -1,0 +1,33 @@
+.register {
+  border-radius: $small-radius;
+}
+
+.register__input {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  padding: 17px 70px 16px 25px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  color: $third-color;
+  border: 4px solid transparent;
+  border-radius: $small-radius;
+
+  &:focus {
+    color: $white-color;
+    background-color: $thirteenth-color;
+    border-color: $white-color;
+    outline: none;
+  }
+}
+
+.register__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.register__text {
+  display: none;
+}

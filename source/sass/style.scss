@@ -3,7 +3,6 @@
 @import "fonts.scss";
 @import "reset.scss";
 @import "mixins.scss";
-@import "blocks/global.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/button.scss";
 @import "blocks/container.scss";
@@ -16,6 +15,7 @@
 @import "blocks/social.scss";
 @import "blocks/hashtags.scss";
 @import "blocks/transport.scss";
+@import "blocks/register.scss";
 @import "blocks/page-main.scss";
 @import "blocks/header.scss";
 @import "blocks/promo.scss";
@@ -25,4 +25,6 @@
 @import "blocks/country.scss";
 @import "blocks/fellows.scss";
 @import "blocks/rates.scss";
-
+@import "blocks/act.scss";
+@import "blocks/address.scss";
+@import "blocks/footer.scss";

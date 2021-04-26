@@ -1,0 +1,37 @@
+.act {
+  padding: 105px 0 28px;
+  background-color: $thirteenth-color;
+}
+
+.act__title {
+  margin-bottom: 19px;
+}
+
+.act__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white-color;
+  text-align: center;
+
+  &--link {
+    color: $main-color;
+    text-decoration: underline;
+  }
+}
+
+.act__text-appeal {
+  margin-bottom: 29px;
+}
+
+.act__register {
+  position: relative;
+  width: 100%;
+  height: 62px;
+  overflow: hidden;
+  margin-bottom: 29px;
+}
+
+.act__text-questions {
+  margin-bottom: 17px;
+}

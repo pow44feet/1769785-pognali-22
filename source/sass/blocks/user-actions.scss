@@ -1,7 +1,6 @@
 .user-actions {
-  display: flex;
-
   @include list-reset;
+  display: flex;
 }
 
 .user-actions__item {
