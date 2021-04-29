@@ -1,0 +1,90 @@
+.promo {
+  padding-bottom: 39px;
+  background-color: $thirteenth-color;
+}
+
+.promo__slogan {
+  text-align: center;
+}
+
+.promo__review {
+  margin: 0;
+  margin-bottom: 29px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.promo__text {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.promo__author {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.promo__tread {
+  @include list-reset;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 10px;
+  counter-reset: li;
+}
+
+.promo__item {
+  position: relative;
+  padding: 22px 50px 47px 24px;
+  margin-top: -25px;
+  background-color: $main-color;
+  border-radius: 10px;
+
+  &::before {
+    position: absolute;
+    top: 22px;
+    right: 21px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    color: #ffffff;
+    counter-increment: li;
+    content: counter(li);
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    padding: 22px 50px 22px 24px;
+  }
+}
+
+.promo__item:nth-child(4n+1) {
+
+  background-color: $fifth-color;
+}
+
+.promo__item:nth-child(4n+2) {
+  background-color: $sevent-color;
+}
+
+.promo__item:nth-child(4n+3) {
+  background-color: $fourth-color;
+}
+
+.promo__item:nth-child(4n+4) {
+  min-height: 80px;
+}
+
+.promo__link {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  color: $second-color;
+}

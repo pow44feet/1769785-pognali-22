@@ -1,0 +1,42 @@
+.page-main {
+  position: relative;
+  z-index: -6;
+}
+
+.page-main__about,
+.page-main__direction,
+.page-main__fellows,
+.page-main__rates,
+.page-main__act,
+.page-main__address,
+.page-main__map {
+  position: relative;
+}
+
+.page-main__about {
+  z-index: 1;
+}
+
+.page-main__direction {
+  z-index: 0;
+}
+
+.page-main__fellows {
+  z-index: -1;
+}
+
+.page-main__rates {
+  z-index: -2;
+}
+
+.page-main__act {
+  z-index: -3;
+}
+
+.page-main__address {
+  z-index: -4;
+}
+
+.page-main__map {
+  z-index: -5;
+}

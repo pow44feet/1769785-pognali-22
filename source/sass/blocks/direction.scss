@@ -1,0 +1,29 @@
+.direction {
+  padding: 105px 0 34px;
+  background-color: $tenth-color;
+}
+
+.direction__title {
+  margin-bottom: 19px;
+}
+
+.direction__text {
+  margin-bottom: 60px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: $third-color;
+}
+
+.direction__list {
+  @include list-reset;
+  margin-bottom: 27px;
+}
+
+.direction__item {
+  margin-bottom: 11px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

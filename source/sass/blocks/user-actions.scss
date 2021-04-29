@@ -1,0 +1,49 @@
+.user-actions {
+  @include list-reset;
+  display: flex;
+}
+
+.user-actions__item {
+  flex: 0 1 auto;
+
+  &--authorize {
+    flex: 1 1 auto;
+  }
+}
+
+.user-actions__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: $fifth-color;
+  border-radius: 50%;
+
+  &--fourth-color {
+    background-color: $fourth-color;
+  }
+}
+
+.user-actions__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  color: $second-color;
+  text-transform: uppercase;
+}
+
+.user-actions--medium-size {
+  .user-actions__link {
+    width: 40px;
+    height: 40px;
+  }
+
+  .user-actions__button {
+    height: 40px;
+  }
+}

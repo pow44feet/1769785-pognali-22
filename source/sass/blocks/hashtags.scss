@@ -1,0 +1,25 @@
+.hashtags {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hashtags li {
+  position: relative;
+  display: inline-flex;
+  margin-right: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $third-color;
+  text-align: center;
+
+  &::before {
+    content: "#";
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

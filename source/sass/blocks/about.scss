@@ -1,0 +1,43 @@
+.about {
+  padding: 33px 0 82px;
+  background-color: $thirteenth-color;
+}
+
+.about__title {
+  margin-bottom: 19px;
+}
+
+.about__text {
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
+}
+
+.about__button {
+  display: none;
+  padding: 5px 36px 5px 32px;
+  margin-top: 52px;
+  font-size: 18px;
+  line-height: 100%;
+
+  & span {
+    padding-right: 80px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about__button {
+    display: inline-flex;
+    justify-content: space-between;
+  }
+}

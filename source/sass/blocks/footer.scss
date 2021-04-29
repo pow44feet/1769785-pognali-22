@@ -1,0 +1,29 @@
+.footer {
+  padding: 37px 0 18px;
+  background: $white-color;
+  border-top-left-radius: $medium-radius;
+  border-top-right-radius: $medium-radius;
+}
+
+.footer__shift {
+  margin-top: -25px;
+}
+
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.footer__social {
+  @include list-reset;
+  padding-bottom: 37px;
+  margin-bottom: 13px;
+  border-bottom: 1px solid $nineteenth-color;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
