@@ -20,7 +20,9 @@
   background-color: $white-color;
   border-radius: $small-radius;
 
-  &:last-child {margin-bottom: 0;}
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .my-plans__name {

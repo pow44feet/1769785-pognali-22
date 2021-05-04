@@ -38,11 +38,12 @@
   }
 }
 
-@media (min-width:$desktop-width){
+@media (min-width: $desktop-width) {
   .pagination__step {
     padding-left: 42px;
     margin-bottom: 27px;
   }
+
   .pagination__step:last-child {
     margin-bottom: 0;
   }

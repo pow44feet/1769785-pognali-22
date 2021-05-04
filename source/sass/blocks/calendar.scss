@@ -13,9 +13,7 @@
 .calendar__arrow {
   padding-top: 2px;
   padding-bottom: 2px;
-}
 
-.calendar__arrow {
   & svg {
     fill: rgba($black-color, 0.3);
   }
@@ -48,6 +46,7 @@
 .calendar__body {
   width: 100%;
   border-collapse: collapse;
+
   & tr {
     height: 30px;
     border-collapse: collapse;
@@ -118,7 +117,7 @@
   display: none;
 }
 
-@media (min-width: $desktop-width){
+@media (min-width: $desktop-width) {
   .calendar__cell-descr {
     display: block;
   }

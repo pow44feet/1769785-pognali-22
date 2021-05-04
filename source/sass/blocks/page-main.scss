@@ -16,36 +16,42 @@
 .page-main__about {
   z-index: 1;
   margin-bottom: $section-offset;
+
   @include section-bottom-rounded;
 }
 
 .page-main__direction {
   z-index: 0;
   margin-bottom: $section-offset;
+
   @include section-bottom-rounded;
 }
 
 .page-main__fellows {
   z-index: -1;
   margin-bottom: $section-offset;
+
   @include section-bottom-rounded;
 }
 
 .page-main__rates {
   z-index: -2;
   margin-bottom: $section-offset;
+
   @include section-bottom-rounded;
 }
 
 .page-main__act {
   z-index: -3;
   margin-bottom: $section-offset;
+
   @include section-bottom-rounded;
 }
 
 .page-main__address {
   z-index: -4;
   margin-bottom: $section-offset;
+
   @include section-bottom-rounded;
 }
 
