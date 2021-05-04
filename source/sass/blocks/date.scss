@@ -1,0 +1,46 @@
+.date__desc {
+  margin-bottom: 20px;
+}
+
+.date__title {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.date__text {
+  margin: 0;
+  line-height: 22px;
+}
+
+.date__pagination {
+  display: none;
+}
+
+.date__companion {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.date__lasting {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.date__children {
+  margin-bottom: 24px;
+}
+
+.date__calendar {
+  margin-bottom: 22px;
+}
+
+.date__button {
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: $desktop-width){
+  .date__pagination {
+    display: block;
+  }
+}

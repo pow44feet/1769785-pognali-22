@@ -1,0 +1,147 @@
+.fun__desc {
+  margin-bottom: 23px;
+}
+
+.fun__title {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.fun__text {
+  margin: 0;
+  line-height: 22px;
+}
+
+.fun__pagination {
+  display: none;
+}
+
+.fun__list {
+  @include list-reset;
+}
+
+.fun__item {
+  position: relative;
+  padding-bottom: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: -14px;
+    width: 2px;
+    height: 100%;
+    background-color: $sixth-color;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+    margin-bottom: 22px;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.fun__info {
+  position: relative;
+  height: 47px;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: -14px;
+    width: 14px;
+    height: 2px;
+    background-color: $sixth-color;
+  }
+}
+
+.fun__country-wrapper {
+  position: relative;
+  height: 47px;
+  padding: 12px 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.fun__country {
+  position: absolute;
+  padding-left: 12px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: $sixth-color;
+  white-space: nowrap;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $sixth-color;
+  }
+}
+
+.fun__flag-wrapper {
+  position: relative;
+  width: 35px;
+  min-width: 35px;
+  height: 24px;
+  margin-left: auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    background-image: linear-gradient(to left, $white-color 0%, $white-color 14px, rgba($white-color, 0) 41px);
+  }
+}
+
+.fun__flag {
+  max-width: 100%;
+}
+
+.fun__textarea {
+  width: 100%;
+  height: 220px;
+  padding: 11px 14px;
+  font-weight: 400;
+  font-size: inherit;
+  line-height: 22px;
+  color: $third-color;
+  border: 1px solid $twentieth-color;
+  border-radius: $tiny-radius;
+  resize: none;
+}
+
+.fun__textarea::placeholder {
+  color: rgba($third-color, 0.3);
+}
+
+.fun__button {
+  width: 100%;
+  justify-content: center;
+  font-size: 17px;
+  text-transform: uppercase;
+
+  & + .fun__button {
+    margin-top: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fun__pagination {
+    display: block;
+  }
+}

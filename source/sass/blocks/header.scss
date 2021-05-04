@@ -1,6 +1,8 @@
 .header {
   padding: 18px 0;
+  //margin-bottom: $section-offset;
   background: $second-color;
+  //@include section-bottom-rounded;
 }
 
 .header__logo {

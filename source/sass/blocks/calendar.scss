@@ -1,0 +1,125 @@
+.calendar__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0;
+  margin-bottom: 12px;
+  text-align: center;
+  border-top: 1px solid $twentyfourth-color;
+  border-bottom: 1px solid $twentyfourth-color;
+}
+
+.calendar__arrow {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.calendar__arrow {
+  & svg {
+    fill: rgba($black-color, 0.3);
+  }
+
+  &:hover svg {
+    fill: rgba($black-color, 0.5);
+  }
+
+  &:active svg {
+    fill: rgba($black-color, 0.1);
+  }
+}
+
+.calendar__arrow-left {
+  position: absolute;
+  left: 0;
+  padding-right: 5px;
+}
+
+.calendar__arrow-right {
+  position: absolute;
+  right: 0;
+  padding-left: 5px;
+
+  & svg {
+    transform: scaleX(-1);
+  }
+}
+
+.calendar__body {
+  width: 100%;
+  border-collapse: collapse;
+  & tr {
+    height: 30px;
+    border-collapse: collapse;
+  }
+
+  & td,
+  & th {
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+
+.calendar__days {
+  & th {
+    border: none;
+  }
+}
+
+.calendar__day {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $third-color;
+  text-transform: uppercase;
+
+  &--weekend {
+    color: $twentyfifth-color;
+  }
+}
+
+.calendar__cell {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: $sixth-color;
+  background-color: $tenth-color;
+  border: 1px solid $twentyfourth-color;
+  border-collapse: collapse;
+
+  &--past {
+    font-weight: 400;
+    color: rgba($third-color, 0.3);
+    background-color: transparent;
+  }
+
+  &--active {
+    color: $white-color;
+    background-color: $sixth-color;
+  }
+
+  &--start {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      right: -1px;
+      bottom: -1px;
+      border: 2px solid $twentyfifth-color;
+      background: transparent;
+    }
+  }
+}
+
+.calendar__cell-descr {
+  display: none;
+}
+
+@media (min-width: $desktop-width){
+  .calendar__cell-descr {
+    display: block;
+  }
+}

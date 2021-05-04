@@ -1,0 +1,42 @@
+.add-plan {
+  @include section-top-rounded;
+  padding-top: 30px;
+  padding-bottom: 68px;
+  margin-top: $section-offset;
+  background-color: $twentysecond-color;
+}
+
+.add-plan__header {
+  display: flex;
+  margin-bottom: 29px;
+}
+
+.add-plan__title {
+  flex: 1 1 auto;
+}
+
+.add-plan__pagination {
+  padding-right: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.add-plan__date {
+  padding: 24px 25px 23px;
+  margin-bottom: 10px;
+  background-color: $white-color;
+  border-radius: $small-radius;
+}
+
+.add-plan__route {
+  padding: 24px 25px 10px;
+  margin-bottom: 10px;
+  background-color: $white-color;
+  border-radius: $small-radius;
+}
+
+.add-plan__fun {
+  padding: 24px 26px 10px 24px;
+  background-color: $white-color;
+  border-radius: $small-radius;
+}

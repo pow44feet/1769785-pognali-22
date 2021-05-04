@@ -15,14 +15,21 @@
   }
 
   &--round {
-    border-radius: 25px;
+    border-radius: $medium-radius;
   }
 
   &--round-secondary {
     padding: 10px 23px;
     min-height: 62px;
     font-weight: 700;
-    border-radius: 10px;
+    border-radius: $small-radius;
+  }
+
+  &--round-regular {
+    padding: 10px 20px;
+    min-height: 40px;
+    font-weight: 700;
+    border-radius: $regular-radius;
   }
 
   &--border {
@@ -47,8 +54,18 @@
     }
   }
 
+  &--transparent {
+    color: $sixth-color;
+    background-color: transparent;
+  }
+
   &--main-color {
     color: $sixth-color;
     background-color: $main-color;
+  }
+
+  &--eleventh-color {
+    color: $second-color;
+    background-color: $eleventh-color;
   }
 }

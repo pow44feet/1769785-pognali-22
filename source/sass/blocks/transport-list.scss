@@ -1,0 +1,23 @@
+.transport-list__item {
+  width: 32.25px;
+  height: 32.25px;
+}
+
+.transport-list__label {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white-color;
+  border-radius: 50%;
+}
+
+.transport-list__checkbox:not(:checked) ~ svg {
+  fill: rgba($sixth-color, 0.15);
+}
+
+.transport-list__checkbox:checked ~ svg {
+  fill: $sixth-color;
+}
