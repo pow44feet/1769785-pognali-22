@@ -39,7 +39,7 @@
   text-transform: uppercase;
 }
 
-@media (min-width: $desktop-width){
+@media (min-width: $desktop-width) {
   .date__pagination {
     display: block;
   }
