@@ -110,7 +110,6 @@
 
 .route__remove {
   content: "";
-  overflow: hidden;
   position: absolute;
   top: -10px;
   right: -10px;
@@ -250,18 +249,16 @@
   }
 }
 
-.route__dropdown--active ~ .route__remove {
-  display: none;
-}
+.route__item--opened {
+  display: block;
 
-/* .route__item--active {
   .route__remove {
     display: none;
   }
-} */
 
-.route__dropdown--active {
-  display: block;
+  .route__dropdown {
+    display: block;
+  }
 }
 
 @media (min-width: $desktop-width) {

@@ -12,6 +12,7 @@
   align-items: center;
   background-color: $white-color;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .transport-list__checkbox:not(:checked) ~ svg {
