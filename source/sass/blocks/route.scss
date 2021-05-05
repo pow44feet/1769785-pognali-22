@@ -1,0 +1,271 @@
+.route__desc {
+  margin-bottom: 21px;
+}
+
+.route__title {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.route__text {
+  margin: 0;
+  line-height: 22px;
+}
+
+.route__pagination {
+  display: none;
+}
+
+.route__list {
+  @include list-reset;
+}
+
+.route__item {
+  position: relative;
+  width: 100%;
+  height: 42px;
+  margin-bottom: 22px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -17px;
+    right: 48px;
+    width: 10px;
+    height: 10px;
+    background-image: url("../img/icons/bow-arrow-down.svg");
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    border: 1px solid $twentieth-color;
+    border-radius: 50%;
+  }
+
+  &:last-child::before {
+    display: none;
+  }
+}
+
+.route__country {
+  overflow: hidden;
+  position: relative;
+  padding: 13px 10px;
+  height: 42px;
+  border: 1px solid $twentieth-color;
+  border-radius: $tiny-radius;
+}
+
+.route__country-target {
+  position: absolute;
+  padding: 0;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.09em;
+  color: $sixth-color;
+  text-align: left;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.route__icon-plus {
+  display: none;
+}
+
+.route__icon-arrow {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 14px;
+  fill: rgba($black-color, 0.3);
+}
+
+.route__flag {
+  position: relative;
+  left: -1px;
+  padding: 8px;
+  display: none;
+  height: 42px;
+  border: 1px solid $twentieth-color;
+  border-radius: $tiny-radius;
+
+  & img {
+    max-width: 35px;
+    height: 24px;
+  }
+}
+
+.route__remove {
+  content: "";
+  overflow: hidden;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 21px;
+  height: 21px;
+  justify-content: center;
+  background-color: $tenth-color;
+  border-radius: 50%;
+
+  & svg {
+    stroke: $twentysixth-color;
+  }
+}
+
+.route__dropdown {
+  position: absolute;
+  overflow: hidden;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: auto;
+  background-color: $white-color;
+  //border: 1px solid $twentieth-color;
+  border-radius: $tiny-radius;
+  box-shadow: 0 2px 16px rgba(212, 217, 235, 0.25);
+}
+
+.route__dropdown-header {
+  position: relative;
+  width: 100%;
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 17px;
+  margin-right: auto;
+  background-color: $sixth-color;
+  border-top-right-radius: $tiny-radius;
+  border-top-left-radius: $tiny-radius;
+}
+
+.route__dropdown-title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: $white-color;
+  text-transform: uppercase;
+}
+
+.route__dropdown-icon {
+  stroke: $white-color;
+}
+
+.route__alphabet {
+  width: 100%;
+  border-right: 1px solid #cbced9;
+  border-left: 1px solid #cbced9;
+}
+
+.route__country-list {
+  @include list-reset;
+  padding: 20px 20px 20px;
+  border-right: 1px solid #cbced9;
+  border-left: 1px solid #cbced9;
+  border-bottom: 1px solid #cbced9;
+  border-bottom-right-radius: $tiny-radius;
+  border-bottom-left-radius: $tiny-radius;
+}
+
+.route__country-item {
+  font-weight: 400;
+  line-height: 22px;
+  color: $third-color;
+}
+
+.route__button {
+  justify-content: center;
+  text-transform: uppercase;
+
+  & + .route__button {
+    margin-top: 7px;
+  }
+}
+
+
+.route__item--disabled {
+  cursor: auto;
+
+  .route__icon-plus {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+    display: block;
+    fill: rgba($black-color, 0.3);
+  }
+
+  .route__icon-arrow {
+    display: none;
+  }
+
+  .route__country {
+    background-color: $tenth-color;
+    border-color: $tenth-color;
+  }
+
+  .route__remove {
+    display: none;
+  }
+}
+
+.route__item--choosed {
+  display: grid;
+  grid-template-columns: auto 53px;
+
+  &::after {
+    border-color: $sixth-color;
+    background-color: $sixth-color;
+  }
+
+  .route__country::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 100%;
+    background-image: linear-gradient(to left, $white-color 0%, $white-color 34px, rgba($white-color, 0) 48px);
+  }
+
+  .route__flag {
+    display: block;
+  }
+}
+
+.route__dropdown--active ~ .route__remove {
+  display: none;
+}
+
+/* .route__item--active {
+  .route__remove {
+    display: none;
+  }
+} */
+
+.route__dropdown--active {
+  display: block;
+}
+
+@media (min-width: $desktop-width) {
+  .route__pagination {
+    display: block;
+  }
+}

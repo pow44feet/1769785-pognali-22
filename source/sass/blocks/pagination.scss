@@ -1,0 +1,50 @@
+.pagination {
+  @include list-reset;
+}
+
+.pagination__step {
+  position: relative;
+  margin-right: 16px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.11em;
+  color: rgba($black-color, 0.6);
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgba($sixth-color, 0.3);
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--active::before {
+    background-color: $sixth-color;
+  }
+
+  &--active {
+    color: $black-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pagination__step {
+    padding-left: 42px;
+    margin-bottom: 27px;
+  }
+
+  .pagination__step:last-child {
+    margin-bottom: 0;
+  }
+}

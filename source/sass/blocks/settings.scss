@@ -1,0 +1,61 @@
+.settings__title {
+  flex: 1 0 auto;
+  margin: 0;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.09em;
+  color: $sixth-color;
+  text-transform: uppercase;
+}
+
+.settings__unit {
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.07em;
+  color: rgba($sixth-color, 0.3);
+  text-transform: uppercase;
+}
+
+.settings__measure {
+  position: relative;
+  flex: 1 0 100%;
+  width: 100%;
+  height: 43px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.settings__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px 40px;
+  font-weight: 500;
+  font-size: 15px;
+  color: $sixth-color;
+  text-align: center;
+  border: 1px solid $twentieth-color;
+  border-radius: $tiny-radius;
+}
+
+.settings__minus {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 100%;
+  justify-content: center;
+}
+
+.settings__plus {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  justify-content: center;
+}

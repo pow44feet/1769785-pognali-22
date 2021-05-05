@@ -1,0 +1,31 @@
+.alphabet-short {
+  border-collapse: collapse;
+}
+
+.alphabet-short__row .alphabet-short__table-char:first-child {
+  border-left: none;
+}
+
+.alphabet-short__row .alphabet-short__table-char:last-child {
+  border-right: none;
+}
+
+.alphabet-short__table-char {
+  width: 20%;
+  height: 41px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: $sixth-color;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  background-color: $white-color;
+  border: 1px solid $twentieth-color;
+
+  &--active {
+    background-color: $tenth-color;
+    border-top-color: $tenth-color;
+    border-bottom-color: $tenth-color;
+  }
+}
