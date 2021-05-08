@@ -19,22 +19,22 @@ if (profileTags) {
 
 
 inputMinus.forEach(item => {
-   item.addEventListener('click', () => {
-      let inputParent = item.closest('.settings__measure');
-      let input = inputParent.querySelector('.settings__input');
-      if (input.value >= 1) {
-         input.value -= 1;
-      }
-   });
+  item.addEventListener('click', () => {
+    let inputParent = item.closest('.settings__measure');
+    let input = inputParent.querySelector('.settings__input');
+    if (input.value >= 1) {
+        input.value -= 1;
+    }
+  });
 });
 
 
 inputPlus.forEach(item => {
-   item.addEventListener('click', () => {
-      let inputParent = item.closest('.settings__measure');
-      let input = inputParent.querySelector('.settings__input');
-      input.value = +input.value + 1;
-   });
+  item.addEventListener('click', () => {
+    let inputParent = item.closest('.settings__measure');
+    let input = inputParent.querySelector('.settings__input');
+    input.value = +input.value + 1;
+  });
 });
 
 
