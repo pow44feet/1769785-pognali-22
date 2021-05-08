@@ -59,6 +59,11 @@
     background-color: transparent;
   }
 
+  &--white-color {
+    color: $second-color;
+    background-color: $white-color;
+  }
+
   &--main-color {
     color: $sixth-color;
     background-color: $main-color;
@@ -67,5 +72,19 @@
   &--eleventh-color {
     color: $second-color;
     background-color: $eleventh-color;
+  }
+
+  &--twelfth-color {
+    color: $thirteenth-color;
+    background-color: $twelfth-color;
+
+    &:hover {
+      background-color: $twentyeighth-color;
+    }
+
+    &:active {
+      color: rgba($thirteenth-color, 0.3);
+      background-color: $twentyeighth-color;
+    }
   }
 }

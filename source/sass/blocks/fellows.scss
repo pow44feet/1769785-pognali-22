@@ -108,4 +108,8 @@
 .fellows__transport {
   @include list-reset;
   max-width: 180px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 14px;
+  justify-content: center;
 }

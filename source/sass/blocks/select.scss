@@ -1,0 +1,17 @@
+.select__filter {
+  margin-bottom: 28px;
+}
+
+.select__output {
+  @include list-reset;
+  text-align: center;
+}
+
+.select__card {
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 86px minmax(auto, 1fr) 86px;
+
+  @include section-top-rounded;
+  @include section-bottom-rounded;
+}

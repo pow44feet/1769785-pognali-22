@@ -1,0 +1,43 @@
+.cards-pagination {
+  padding-bottom: 71px;
+}
+
+.cards-pagination__body {
+  padding: 17px 28px 14px;
+  background-color: $white-color;
+  border-radius: $regular-radius;
+}
+
+.cards-pagination__count {
+  @include list-reset;
+  display: none;
+}
+
+.cards-pagination__arrows {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cards-pagination__arrow {
+  padding: 0 5px;
+}
+
+.cards-pagination__arrow-right {
+  display: inline-block;
+  height: 100%;
+  margin-left: 20px;
+
+  & svg {
+    transform: scale(-1, 1);
+  }
+}
+
+.cards-pagination__arrow-left {
+  margin-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .cards-pagination__count {
+    display: flex;
+  }
+}

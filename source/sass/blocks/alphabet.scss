@@ -1,0 +1,50 @@
+.alphabet {
+  text-align: center;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.alphabet__cell {
+  width: calc(100% / 5);
+  height: 40px;
+  background-color: $white-color;
+  border: 1px solid $twentieth-color;
+}
+
+.alphabet__char {
+  position: relative;
+  z-index: 1;
+  font-weight: 500;
+  font-size: 14px;
+  color: $sixth-color;
+}
+
+.alphabet__list {
+  display: none;
+}
+
+.alphabet__cell--active {
+  position: relative;
+
+  &::before {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    background-color: $sixth-color;
+    border: 1px solid $sixth-color;
+  }
+
+  .alphabet__char {
+    color: $white-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .alphabet__list {
+    display: block;
+  }
+}

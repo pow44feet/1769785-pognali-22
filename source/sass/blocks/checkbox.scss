@@ -20,6 +20,7 @@
     left: 0;
     width: 26px;
     height: 26px;
+    background: $white-color;
     border: 1px solid $twentieth-color;
     border-radius: $tiny-radius;
   }
@@ -27,7 +28,21 @@
 
 .checkbox__input:checked + .checkbox__label::before {
   background: url("../img/icons/icon-check.svg");
+  background-color: $white-color;
   background-size: 9px 9px;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.checkbox--choice {
+  .checkbox__input + .checkbox__label {
+    padding-left: 27px;
+    color: $black-color;
+  }
+
+  .checkbox__input + .checkbox__label::before {
+    width: 18px;
+    height: 18px;
+    border: none;
+  }
 }

@@ -1,6 +1,7 @@
 .page-main {
   position: relative;
   z-index: -6;
+  background-color: $tenth-color;
 }
 
 .page-main__about,
@@ -57,4 +58,12 @@
 
 .page-main__map {
   z-index: -5;
+}
+
+.page-main__filter {
+  margin-bottom: 21px;
+}
+
+.page-main__select {
+  margin-bottom: 28px;
 }

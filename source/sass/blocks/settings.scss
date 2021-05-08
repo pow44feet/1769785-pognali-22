@@ -40,6 +40,13 @@
   border-radius: $tiny-radius;
 }
 
+.settings__input::-webkit-outer-spin-button,
+.settings__input::-webkit-inner-spin-button {
+  display: none;
+  appearance: none;
+  margin: 0;
+}
+
 .settings__minus {
   position: absolute;
   z-index: 1;

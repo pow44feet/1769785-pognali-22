@@ -1,18 +1,21 @@
-let profileTags = document.querySelector('.profile__tags-list');
-let inputMinus = document.querySelectorAll('.settings__minus');
-let inputPlus = document.querySelectorAll('.settings__plus');
-let routeActive = document.querySelector('.route__item--active');
-let routeRemove = document.querySelector('.route__item--active .route__remove');
-let routeDropdown = document.querySelector('.route__dropdown');
+const profileTags = document.querySelector('.profile__tags-list');
+const inputMinus = document.querySelectorAll('.settings__minus');
+const inputPlus = document.querySelectorAll('.settings__plus');
+const routeActive = document.querySelector('.route__item--active');
+const routeRemove = document.querySelector('.route__item--active .route__remove');
+const routeDropdown = document.querySelector('.route__dropdown');
+const filterButton = document.querySelector('.filter__show');
+const filterContent = document.querySelector('.filter__content');
+const tabTitle = document.querySelectorAll('.choice__item-title');
 
-profileTags.addEventListener('keyup', (event) => {
-   let elem = event.currentTarget;
-   if (elem.scrollTop > 0) {
-      elem.style.height = `${elem.scrollHeight}px`;
-   }
-});
-
-
+if (profileTags) {
+  profileTags.addEventListener('keyup', (event) => {
+    let elem = event.currentTarget;
+    if (elem.scrollTop > 0) {
+        elem.style.height = `${elem.scrollHeight}px`;
+    }
+  });
+}
 
 
 inputMinus.forEach(item => {
@@ -35,11 +38,33 @@ inputPlus.forEach(item => {
 });
 
 
+if (routeActive) {
+  routeActive.addEventListener('click', () => {
+    if (!(routeActive.classList.contains('route__item--opened'))) {
+      routeActive.classList.add('route__item--opened');
+    } else {
+      routeActive.classList.remove('route__item--opened');
+    }
+  });
+}
 
-routeActive.addEventListener('click', () => {
-  if (!(routeActive.classList.contains('route__item--opened'))) {
-    routeActive.classList.add('route__item--opened');
-  } else {
-    routeActive.classList.remove('route__item--opened');
-  }
+if (filterButton) {
+  filterButton.addEventListener('click', () => {
+    if (!(filterContent.classList.contains('filter__content--closed'))) {
+      filterContent.classList.add('filter__content--closed');
+    } else {
+      filterContent.classList.remove('filter__content--closed');
+    }
+  });
+}
+
+
+tabTitle.forEach(item => {
+  item.addEventListener('click', () => {
+    if (!(item.classList.contains('choice__item-title--closed'))) {
+      item.classList.add('choice__item-title--closed');
+    } else {
+      item.classList.remove('choice__item-title--closed');
+    }
+  });
 });
